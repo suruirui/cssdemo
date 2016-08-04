@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>三行自适应布局</title>
+	<style>
+		.container{
+			width: 100%;
+			height: 100%;
+			background-color: #ccc;
+			text-align: center;
+			display: flex;
+			flex-flow:column;
+			color:#fff;
+		}
+		.head,.foot{
+			height: 200px;
+			background-color: #000;
+			line-height: 200px;
+		}
+		.content{
+			flex:1;
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="head">
+			head
+		</div>
+		<div class="content">
+			<p>content</p>
+			<p>content</p>
+			<p>content</p>
+			<p>content</p>
+			<p>content</p>
+		</div>
+		<div class="foot">
+			foot
+		</div>
+	</div>
+</body>
+</html>
