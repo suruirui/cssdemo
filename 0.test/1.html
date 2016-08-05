@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>两列布局</title>
+	<style>
+		html,body,.parent,.side,.main{
+			margin: 0; padding: 0;
+		}
+		.parent{
+			width: 810px;
+			height: 200px;
+			margin: 0 auto;
+			text-align: center;
+			color: #fff;
+			font: 16px '微软雅黑';
+			line-height: 200px;
+		}	
+		.main{
+			margin-left: 10px;
+			float: left;
+			width: 600px;
+			background-color: blue;
+		}
+		.side{
+			float: left;
+			width: 200px;
+			background-color: red;
+		}
+		.clearfix:after{
+			content: ".";
+			display: block;
+			clear: both;
+			height: 0;
+			overflow: hidden;
+			visibility: hidden;
+		}
+	</style>
+</head>
+<body>
+<div class="parent clearfix"> 
+    <div class="side">侧栏</div>
+    <div class="main">主栏</div>
+</div>
+</body>
+</html>

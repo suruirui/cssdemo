@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>3D魔方动画 没写完</title>
+	<style>
+		.mdemo{
+			width: 500px;
+			height: 500px;
+			margin: 0 auto;
+			margin-top: 200px;
+			position: relative;
+			transform:rotateY(45deg);
+			transform-style:preserve-3d;
+		}
+		.mdemo-1{
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			top:20px;
+			left: 50px;
+			border: 2px solid #666;
+			text-align: center;
+			font:14px '微软雅黑';
+			color: #ccc;
+			line-height: 200px;
+		}
+		
+		.front{
+			background-color: pink;
+			transform:translate3d(0,0,200px);
+		}
+		.left{
+			background-color: blue;
+			transform: translate(100px) rotateY(90deg);
+		}
+		.right{
+			background-color: green;
+			transform:rotateY(135deg);
+		}
+		.top{
+			background-color: yellow;
+			transform:rotateX(90deg);
+		}
+		.bottom{
+			background-color: orange;
+			transform:rotateX(-90deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="mdemo">
+		<div class="mdemo-1 front">front</div>
+		<div class="mdemo-1 behind">behind</div>
+		<div class="mdemo-1 left">left</div>
+		<div class="mdemo-1 right">right</div>
+		<div class="mdemo-1 top">top</div>
+		<div class="mdemo-1 bottom">bottom</div>
+	</div>
+</body>
+</html>

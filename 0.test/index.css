@@ -1,0 +1,44 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+img{
+	width: 100px;
+	height: 100px;
+	float: left;
+}
+/*文本*/
+.content{
+	width: 200px;
+	height: 100px;
+	font-family: '宋体';
+	line-height: 25px;
+	float: left;
+	margin-left: 15px;
+	overflow:hidden;
+}
+/*标题*/
+h2{
+	font-size: 16px;
+	font-weight: bold;
+	color: #000;
+	text-overflow:ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+/*段落*/
+p{
+	font-size: 14px;
+	white-space: pre-wrap;
+	color: #666;
+}
+/*清除浮动*/
+.clearfix:after{
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+}

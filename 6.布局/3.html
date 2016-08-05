@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>三行两列自适应布局</title>
+	<style>
+		html,body{
+			margin: 0;
+			text-align: center;
+		}
+		.head,.foot{
+			line-height: 100px;
+			background-color: #000;
+			color: #fff;
+		}
+		.side{
+			background-color: yellow;
+		}
+		.main{
+			background-color: pink;
+		}
+
+		html,body{
+			height: 100%;
+		}
+		.head,.foot{
+			height: 100px;
+		}
+		body{
+			display: flex;
+			 flex-flow:column;
+		}
+		.content{
+			flex:1;
+			display: flex;
+		}
+		.side{
+			width: 200px;
+		}
+		.main{
+			flex:1;
+			margin-left: 10px;
+		}
+		.content{
+			width: 960px;
+			align-self:center;
+		}
+	</style>
+</head>
+<body>
+	<div class="head">head</div>
+	<div class="content">
+		<div class="side">side</div>
+		<div class="main">main</div>
+	</div>
+	<div class="foot">foot</div>
+</body>
+</html>

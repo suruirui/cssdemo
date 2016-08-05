@@ -2,43 +2,43 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>三行自适应布局</title>
+	<title>三行自适应布局3row_fit</title>
 	<style>
-		.container{
+		.head{
+			position: absolute;
+			top:0;
+			left: 0;
 			width: 100%;
-			height: 100%;
+			height: 100px;
 			background-color: #ccc;
-			text-align: center;
-			display: flex;
-			flex-flow:column;
-			color:#fff;
 		}
-		.head,.foot{
-			height: 200px;
-			background-color: #000;
-			line-height: 200px;
+		.container{
+			position: absolute;
+			top: 100px;
+			left: 0;
+			bottom: 100px;
+			right: 0;
+			overflow: auto;
+			background-color:pink;
 		}
 		.content{
-			flex:1;
-			background-color: green;
+			height: 2000px;
+		}
+		.foot{
+			position: absolute;
+			bottom: 0;
+			left:0;
+			width: 100%;
+			height: 100px;
+			background-color: #ccc;
 		}
 	</style>
 </head>
 <body>
+	<div class="head">head</div>
 	<div class="container">
-		<div class="head">
-			head
-		</div>
-		<div class="content">
-			<p>content</p>
-			<p>content</p>
-			<p>content</p>
-			<p>content</p>
-			<p>content</p>
-		</div>
-		<div class="foot">
-			foot
-		</div>
+		<div class="content">content area</div>
 	</div>
+	<div class="foot">foot</div>
 </body>
 </html>
